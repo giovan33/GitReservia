@@ -1,0 +1,179 @@
+/* ALL */
+body{
+    font-family: 'Raleway', sans-serif, arial;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    margin: auto;
+}
+
+/* HEADER */
+header{
+    padding-top: 30px;
+    margin-bottom: 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAV */
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li{
+    margin-right: 30px;
+    font-size: 0.8em;
+    color: grey;
+}
+
+nav a{
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover{
+    color:#0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 43px;
+}
+
+nav li strong{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/* SECTION : RECHERCHE */
+.block-1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.titre h1{
+    color: black;
+    height: 12px;
+    width: 500px;
+    font-size: 1em;
+}
+
+.titre p{
+    width: 250px;
+    font-size: 0.7em;
+    color: grey;
+}
+
+/* BARRE DE RECHERCHE */
+form{
+    margin: 1px 0px 15px 0px;
+    width: 297px;
+    height: 30px;
+    border: solid 2px #F2F2F2;
+    border-radius: 10px;
+    border-right: none;
+    padding-left: 0px;
+}
+
+.fas.fa-map-marker-alt{
+    width: 15px;
+    padding: 7px;
+    border-radius: 6px 0px 0px 6px ;
+    background-color: #F2F2F2;
+}
+
+.text{
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.button{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif, arial;
+    width: 110px;
+    height: 32px;
+    padding: 8px 10px 10px 10px;
+    border-style: none;
+    border-radius: 0px 7px 7px 0px;
+    background-color: #0065FC;
+    color: white;
+}
+
+/* FILTRES */
+.filtres{
+
+    display: flex;
+    justify-content: flex-start;
+    width: 750px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.filtres i{
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 9px;
+    margin-right: 10px;
+    margin-left: -15px;
+}
+
+.filtres .mot{
+    text-align: center;
+    border: solid 2px #F2F2F2;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 30px; 
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.fas.fa-info{
+    text-align: center;
+    color: #0065FC;
+    border: solid 2px #F2F2F2;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
+.indication{
+    color: grey;
+    font-size: 0.8em;
+}
+
+/* SECTION : HEBERGEMENTS */
+.hebergements{
+    display: flex;
+}
+.hebergements-left{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 10px;
+    height: 400px;
+    width: 510px;
+    background-color: grey;
+    margin-right: 50px;
+}
+
+aside{
+    position: relative;
+    border-radius: 10px;
+    height: 400px;
+    width: 280px;
+    background-color: grey;
+}
+
+
+
+
+
+
+
+
