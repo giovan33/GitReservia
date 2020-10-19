@@ -1,7 +1,6 @@
 /* ALL */
 body{
     font-family: 'Raleway', sans-serif, arial;
-    margin: 0;
     padding: 0;
     width: 70%;
     margin: auto;
@@ -140,34 +139,129 @@ form{
     width: 10px;
     height: 10px;
     padding: 5px;
+    font-size: 10px;
 }
 
 .indication{
     color: grey;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 /* SECTION : HEBERGEMENTS */
+h2{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h3{
+    margin-bottom: -8px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.grey{
+    color: grey !important;
+}
+
+.fas.fa-star{
+    color: #0065FC;
+    font-size: 10px;
+}
+
 .hebergements{
     display: flex;
 }
 .hebergements-left{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    justify-content: space-around;
     border-radius: 10px;
-    height: 400px;
-    width: 510px;
-    background-color: grey;
-    margin-right: 50px;
+    width: 70%;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.hebergements-left figure{
+    background-color: white;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px grey;
+    width: 30%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.hebergements-left figcaption{
+    padding: 0 0 10px 10px;
+    text-align: left;
+}
+
+.hebergements-left img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -10px;
+
+}
+
+.hebergements-left p{
+    color: grey;
+    font-size: 0.7em;
+    margin-bottom: 0px;
+}
+
+.hebergements-left figure + h2{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 aside{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    background-color: grey;
+    width: 40%;
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fas.fa-chart-line{
+    float: right;
+}
+
+aside figure{
+    display: flex;
+    margin: 0;
+    background-color: white;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px grey;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+aside img{
+    width: 35%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+aside p{
+    font-size: 0.7em;
+    color: grey;
+}
+
+aside figcaption{
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 
