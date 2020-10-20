@@ -272,6 +272,8 @@ aside figcaption{
     flex-direction: column;
     justify-content: space-between;
     height: 340px;
+    width: 900px;
+    margin-bottom: 30px;
 }
 
 .activites .item1{
