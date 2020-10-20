@@ -177,7 +177,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 70%;
     background-color: #F2F2F2;
     margin-right: 20px;
@@ -222,11 +222,12 @@ h3{
     font-size: 0.8em;
 }
 
+/* ASIDE */
 aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 40%;
     background-color: #F2F2F2;
     padding-left: 20px;
@@ -262,6 +263,66 @@ aside p{
 aside figcaption{
     margin-left: 5px;
     margin-bottom: 5px;
+}
+
+/* SECTION : ACTIVITES */
+.activites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    align-items: flex-start;
+    /*align-items: flex-start;*/
+    /*align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;*/
+}
+
+.activites .item1{
+    height: 300px;
+}
+
+.activites .item2{
+    height: 130px;
+}
+
+/*.activites .item3{
+    height: 90px;
+}
+
+.activites .item4{
+    height: 300px;
+}
+
+.activites .item5{
+    height: 90px;
+}
+
+.activites .item6{
+    height: 130px;
+}*/
+
+.activites img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+}
+
+.activites figure{
+    border-radius: 15px;
+    margin: 0;
+    border: 2px solid #F2F2F2;
+    box-shadow: 1px 1px 10px grey;
+    width: 200px;
+}
+
+.activites h3{
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 
