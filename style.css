@@ -322,6 +322,25 @@ aside figcaption{
     padding-left: 10px;
 }
 
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    height: 300px;
+    padding-right: 100px;
+    padding-left: 30px;
+}
+
+footer h4{
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 0.7em;
+}
+
+
 
 
 
