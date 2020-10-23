@@ -65,20 +65,19 @@ nav li strong{
 
 /* BARRE DE RECHERCHE */
 form{
-    margin: 1px 0px 15px 0px;
-    width: 297px;
-    height: 30px;
+    margin: 5px 0px 15px 0px;
+    width: 308px;
     border: solid 2px #F2F2F2;
     border-radius: 10px;
     border-right: none;
-    padding-left: 0px;
 }
 
 .fas.fa-map-marker-alt{
     width: 15px;
-    padding: 7px;
+    padding: 12px;
     border-radius: 6px 0px 0px 6px ;
     background-color: #F2F2F2;
+    font-size: 0.9em;
 }
 
 .text{
@@ -88,12 +87,10 @@ form{
 }
 
 .button{
-    text-align: center;
     font-weight: bold;
     font-family: 'Raleway', sans-serif, arial;
     width: 110px;
-    height: 32px;
-    padding: 8px 10px 10px 10px;
+    padding: 11px;
     border-style: none;
     border-radius: 0px 7px 7px 0px;
     background-color: #0065FC;
@@ -120,7 +117,6 @@ form{
 }
 
 .filtres .mot{
-    text-align: center;
     border: solid 2px #F2F2F2;
     border-radius: 0 20px 20px 0;
     border-left: none;
@@ -128,7 +124,17 @@ form{
     margin-top: 5px;
     margin-left: 30px; 
     padding-right: 10px;
-    padding-left: 0;
+}
+
+.filtres .mot a{
+    text-decoration: none;
+}
+
+.filtres .mot a:hover{
+    color: #0065FC;
+    font-size: 1.1em;
+    border-top: solid 2px #0065FC;
+    padding-top: 5px;
 }
 
 .fas.fa-info{
@@ -173,6 +179,11 @@ h3{
 .hebergements{
     display: flex;
 }
+
+.hebergements a{
+    text-decoration: none;
+}
+
 .hebergements-left{
     display: flex;
     flex-wrap: wrap;
@@ -215,18 +226,20 @@ h3{
     margin-bottom: 0px;
 }
 
-.hebergements-left figure + h2{
+.hebergements-left figure + a h2{
     margin-bottom: 20px;
     margin-top: 5px;
     font-weight: bold;
     font-size: 0.8em;
 }
 
+
+
 /* ASIDE */
 aside{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 15px;
     width: 40%;
     background-color: #F2F2F2;
@@ -240,7 +253,7 @@ aside{
 
 aside figure{
     display: flex;
-    margin: 0;
+    margin: auto;
     background-color: white;
     border: 2px #F2F2F2 solid;
     border-radius: 15px;
@@ -269,11 +282,19 @@ aside figcaption{
 .activites{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.activites a{
+    text-decoration: none;
+}
+
+.noflex{
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 340px;
-    width: 900px;
-    margin-bottom: 30px;
+    flex-basis: 20%;
 }
 
 .activites .item1{
@@ -302,9 +323,9 @@ aside figcaption{
 
 .activites img{
     border-radius: 15px 15px 0 0;
-    width: 100%;
     object-fit: cover;
     height: 100px;
+    width: 100%;
 }
 
 .activites figure{
@@ -312,7 +333,7 @@ aside figcaption{
     margin: 0;
     border: 2px solid #F2F2F2;
     box-shadow: 1px 1px 10px grey;
-    width: 200px;
+    flex-basis: 20%;
 }
 
 .activites h3{
@@ -327,9 +348,13 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    height: 300px;
+    padding-bottom: 30px;
     padding-right: 100px;
     padding-left: 30px;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 footer h4{
@@ -339,6 +364,7 @@ footer h4{
 footer p{
     font-size: 0.7em;
 }
+
 
 
 
