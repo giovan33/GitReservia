@@ -184,6 +184,10 @@ h3{
     text-decoration: none;
 }
 
+.hebergements a:link{
+    text-decoration: none;
+}
+
 .hebergements-left{
     display: flex;
     flex-wrap: wrap;
