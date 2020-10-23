@@ -128,6 +128,8 @@ form{
 
 .filtres .mot a{
     text-decoration: none;
+    font-size: 0.9em;
+    color: black;
 }
 
 .filtres .mot a:hover{
@@ -182,10 +184,9 @@ h3{
 
 .hebergements a{
     text-decoration: none;
-}
-
-.hebergements a:link{
-    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .hebergements-left{
@@ -211,7 +212,7 @@ h3{
 }
 
 .hebergements-left figcaption{
-    padding: 0 0 10px 10px;
+    padding: 5px 0 10px 10px;
     text-align: left;
 }
 
@@ -292,6 +293,8 @@ aside figcaption{
 
 .activites a{
     text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 .noflex{
@@ -359,6 +362,7 @@ footer{
 
 footer a{
     text-decoration: none;
+    color: grey;
 }
 
 footer h4{
