@@ -30,9 +30,9 @@
                 <img src="images/logo/reservia.svg" alt="logo reservia"/>
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><strong>S'inscrire</strong></li>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                        <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
             </header>
@@ -42,15 +42,15 @@
         <!-- section : recherche -->
         <div class="block-1">
             <div class="titre">
-                <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
             
             <div class="barre-de-recherche">
                 <form><i class="fas fa-map-marker-alt"></i>
                     <input type="text" placeholder="Marseille,France" class="text">
-                    <input type="button" value="Rechercher" class="button">
                 </form>
+                <input type="button" value="Rechercher" class="button">
             </div> 
                 
             <div class="filtres">
@@ -67,14 +67,14 @@
         <!-- section : recherche -->
         
         <!-- section : hébérgements -->
-        <div class="hebergements">
+        <div id="hebergements">
             <div class="hebergements-left">
                 <h2>Hébérgements à Marseille</h2>
                     <figure>
                         <a href="#">    
                             <img src="images/hebergements/4_small/cannebiere.jpg" alt="auberge la cannebière">
                             <figcaption>
-                                <h3>Auberge La Cannebière</h3>
+                                <h3>Auberge la Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i> 
                             </figcaption>
@@ -178,8 +178,8 @@
         <!-- section : hébérgements -->
 
         <!-- section : activités -->
-        <h2>Activités à Marseille</h2>
-            <div class="activites">
+        <h2 class="marseille">Activités à Marseille</h2>
+            <div class="activites" id="activites">
                 <figure>
                     <a href="#">
                         <img class="item1" src="images/activites/4_small/vieuxport.jpg" alt="vieux port">
