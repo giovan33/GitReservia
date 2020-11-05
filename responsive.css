@@ -11,33 +11,79 @@
     .header{
         margin: 0;
         padding: 0;
+        flex-wrap: wrap;
+        margin-top: 30px;
     }
 
     .header img{
-        margin-top: 20px;
+        margin-top: 0;
         margin-left: 20px;
     }
 
-    nav ul{
-        display: block;
+    nav{
+        width: 100%;        
     }
 
-    nav li:nth-child(3) a{
-        font-size: 1.5em;
+    nav ul{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav li{
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li:nth-child(1){
+        order: 2;
+        width: 50%;
+        font-size: 1em;
+        margin-top: 15px;
+        border-bottom: solid 3px #F2F2F2;
+        padding-bottom: 15px;
+    }
+
+    nav li:nth-child(1):hover{
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    nav li:nth-child(2):hover{
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    nav li:nth-child(2){
+        order: 3;
+        width: 50%;
+        font-size: 1em;
+        margin-top: 15px;
+        border-bottom: solid 3px #F2F2F2;
+       
+    }
+
+    nav li:nth-child(3){
+        position: absolute;
+        font-size: 1.1em;
+        font-weight: bold;
         order: 1;
+        margin-left: 275px;
+        margin-top: -45px;
     }
 
     .titre{
-        width: 100%;
+        width: 95%;
         margin-left: 20px;
     }
 
     .titre h1{
         font-size: 1.5em;
         width: 90%;
+        margin-top: 15px;
     }
 
     .titre p{
+        margin-bottom: 25px;
         font-size: 1.05em;
         width: 100%
     }
@@ -47,28 +93,64 @@
     }
 
     .fas.fa-map-marker-alt{
-        width: 15%;
+        width: 30%;
+        padding-top: 18px;
+        font-size: 18px;
+    }
+
+    .button{
+        margin-left: 80px;
+        border-radius: 15px;
+        padding: 18px;
+        padding-right: 25px;
+    }
+
+    .button-desktop{
+        display: none;
+    }
+
+    .button-mobile{
+        display: initial;
+        font-size: 16px;
     }
 
     .text{
         margin-left: 10px;
+        font-size: 16px;
+        width: 100%;
     }
 
     form{
         display: flex;
-        width: 65%;
+        width: 92%;
+        border-radius: 12px 15px 15px 12px;
     }
 
     .filtres{
         margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-right: 35px;
+        flex-wrap: wrap;
+
+    }
+
+    .filtres p{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .filtres i{
+        padding: 12px;
+        margin-right: 10px;
     }
 
     .filtres .mot{
+        font-size: 1.2em;
+        margin-bottom: 15px;
         display: flex;
         align-items: center;
+        padding-right: 20px;
+        margin-right: 5px;
     }
 
     .fas.fa-info{
@@ -83,6 +165,7 @@
         font-size: 1.05em;
         width: 90%;
         margin-left: 20px;
+        margin-top: 0;
     }
 
     #hebergements{
@@ -93,6 +176,13 @@
     aside{
         width: 100%;
         border-radius: 0;
+        padding-bottom: 20px;
+    }
+
+    aside figure{
+        height: 120px;
+        width: 97%;
+        margin-left: 5px;
     }
 
     aside figcaption{
@@ -100,22 +190,40 @@
         width: 50%;
     }
 
+    aside p{
+        font-size: 0.8em;
+    }
+
+    aside .fas.fa-star{
+        margin-top: 0;
+    }
+
     h2{
-        font-size: 1.2em;
+        font-size: 1.3em;
+        margin-top: 20px;
     }
 
     h3{
-        font-size: 0.9em;
+        font-size: 1em;
+    }
+
+    .fas.fa-star{
+        margin-bottom: -7px;
     }
 
     .hebergements-left{
         width: 100%;
         background-color: white;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .hebergements-left figure{
         width: 100%;
+    }
+
+    .hebergements-left p{
+        font-size: 0.8em;
     }
 
     .marseille{
@@ -123,11 +231,25 @@
     }
 
    .activites{
-       display: block;
+       flex-direction: column;
    }
 
    .activites figure{
        margin: 5%;
+       margin-bottom: 5px;
+   }
+
+   .activites figcaption{
+       margin-bottom: 5px;
+       margin-top: 5px;
+   }
+
+   .activites figure img{
+       height: 120px !important;
+   }
+
+   .activites h3{
+       font-size: 1em;
    }
 
    footer{
@@ -139,16 +261,211 @@
    }
 
    footer p{
-       font-size: 0.8em;
+       font-size: 0.9em;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    *{
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .header{
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .header img{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    nav{
+        width: 100%;        
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav li{
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li:nth-child(1){
+        order: 2;
+        width: 50%;
+        font-size: 1em;
+        margin-top: 15px;
+        border-bottom: solid 3px #F2F2F2;
+        padding-bottom: 15px;
+    }
+
+    nav li:nth-child(1):hover{
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    nav li:nth-child(2):hover{
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    nav li:nth-child(2){
+        order: 3;
+        width: 50%;
+        font-size: 1em;
+        margin-top: 15px;
+        border-bottom: solid 3px #F2F2F2;
+       
+    }
+
+    nav li:nth-child(3){
+        position: absolute;
+        font-size: 1.1em;
+        font-weight: bold;
+        order: 1;
+        margin-left: 670px;
+        margin-top: -45px;
+        margin-right: 0;
+        float: right;
+    }
+
+    .titre h1{
+        font-size: 1.2em;
+    }
+
+    .titre p{
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .filtres{
+        flex-wrap: wrap;
+    }
+
+    .filtres p{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .filtres .mot{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        margin-right: 5px;
    }
 
+   .block-1{
+        margin-left: 20px;
+    }
 
+   form{
+       display: flex;
+       width: 45%;
+   }
 
+   .fas.fa-map-marker-alt{
+       padding: 15px;
+       padding-right: 25px;
+   }
 
-    
+   .text{
+       width: 100%;
+       margin-left: 15px;
+       font-size: 0.9em;
+   }
 
+   .button{
+       padding: 15px;
+       width: 45%;
+   }
 
+   .fas.fa-info{
+       height: 25px;
+       width: 25px;
+       padding: 5px;
+       font-size: 10px;
+    }
 
+    .indication{
+        font-size: 0.9em;
+    }
 
+   #hebergements{
+       display: flex;
+       flex-direction: column-reverse;
+   } 
 
+   aside{
+       width: 100%;
+       border-radius: 0;
+       padding-bottom: 20px;
+    }
+
+    .fas.fa-chart-line{
+        margin-right: 20px;
+    }
+
+    aside figcaption{
+        width: 60%;
+    }
+
+    .hebergements-left{
+       width: 100%;
+       background-color: white;
+       flex-direction: row;
+       justify-content: space-between;
+       padding-bottom: 20px;
+    }
+
+    .hebergements-left h2{
+        margin-left: 5px;
+    }
+
+    .hebergements-left p{
+        font-size: 0.8em;
+    }
+
+    h2{
+        font-size: 1em;
+        margin-left: 25px;
+    }
+
+    h3{
+        font-size: 0.9em;
+    }
+
+    figcaption p{
+        font-size: 0.8em;
+    }
+
+    .activites{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .noflex{
+        display: block;
+    }
+
+    .activites figure{
+        margin-bottom: 35px;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
 }
