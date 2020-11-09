@@ -67,7 +67,7 @@
         font-size: 1.1em;
         font-weight: bold;
         order: 1;
-        margin-left: 275px;
+        margin-left: 75%;
         margin-top: -45px;
     }
 
@@ -99,7 +99,6 @@
     }
 
     .button{
-        margin-left: 80px;
         border-radius: 15px;
         padding: 18px;
         padding-right: 25px;
@@ -187,7 +186,7 @@
 
     aside figcaption{
         margin-left: 20px;
-        width: 50%;
+        width: 55%;
     }
 
     aside p{
@@ -195,7 +194,7 @@
     }
 
     aside .fas.fa-star{
-        margin-top: 0;
+        margin-top: -15px;
     }
 
     h2{
@@ -205,10 +204,6 @@
 
     h3{
         font-size: 1em;
-    }
-
-    .fas.fa-star{
-        margin-bottom: -7px;
     }
 
     .hebergements-left{
@@ -331,10 +326,10 @@
 
     nav li:nth-child(3){
         position: absolute;
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-weight: bold;
         order: 1;
-        margin-left: 670px;
+        margin-left: 85%;
         margin-top: -45px;
         margin-right: 0;
         float: right;
