@@ -7,12 +7,11 @@ body{
 }
 
 /* HEADER */
-header{
+.header{
     padding-top: 30px;
     margin-bottom: 40px;
     display: flex; 
     justify-content: space-between;
-    align-items: center;
 }
 
 /* NAV */
@@ -38,6 +37,11 @@ nav li{
     color: grey;
 }
 
+nav li:nth-child(3) a{
+    color: #0065FC;
+    font-weight: bold;
+}
+
 nav a{
     text-decoration: none;
     color: grey;
@@ -49,16 +53,10 @@ nav a:hover{
     padding-top: 43px;
 }
 
-nav li:nth-child(3) a{
-    color: #0065FC;
-    font-weight: bold;
-}
-
 /* SECTION : RECHERCHE */
-.block-1{
+.recherche-block{
     display: flex;
     flex-direction: column;
-    text-align: left;
 }
 
 .titre h1{
@@ -70,7 +68,6 @@ nav li:nth-child(3) a{
 }
 
 .titre p{
-    width: 250px;
     font-size: 0.7em;
     color: grey;
 }
@@ -79,14 +76,9 @@ nav li:nth-child(3) a{
 label{
     display: none;
 }
+
 .barre-de-recherche{
     display: flex;
-}
-form{
-    margin: 5px 0px 5px 0px;
-    border: solid 2px #F2F2F2;
-    border-radius: 11px 15px 15px 11px;
-    border-right: none;
 }
 
 .fas.fa-map-marker-alt{
@@ -100,9 +92,19 @@ form{
     padding-bottom: 11px;
 }
 
+form{
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    border: solid 2px #F2F2F2;
+    border-radius: 11px 15px 15px 11px;
+    border-right: none;
+}
+
 .text{
     border: none;
     outline: none;
+    margin-left: 10px;
+    width: 200px;
 }
 
 .button-mobile{
@@ -110,7 +112,6 @@ form{
 }
 
 .button{
-    align-self: center;
     font-weight: bold;
     font-family: 'Raleway', sans-serif, arial;
     border-style: none;
@@ -151,7 +152,6 @@ form{
 }
 
 .filtres p{
-    display: flex;
     margin: 0;
     padding: 0;
     padding-top: 8px;
@@ -164,10 +164,10 @@ form{
     color: #0065FC;
     padding: 10px;
     margin-right: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
-.filtres .mot {
+.filtres .bloc {
     border: solid 2px #F2F2F2;
     border-radius: 20px;
     border-left: none;
@@ -175,18 +175,18 @@ form{
     padding-right: 10px;
 }
 
-.filtres .mot:hover{
+.filtres .bloc:hover{
     animation: backgroundAnimation 0.8s infinite
                alternate;
 }
 
-.filtres .mot a{
+.filtres .bloc a{
     text-decoration: none;
     font-size: 0.9em;
     color: black;
 }
 
-.filtres .mot a:hover{
+.filtres .bloc a:hover{
     animation: filtreAnimation 0.8s infinite 
                 alternate;
 }
@@ -209,41 +209,11 @@ form{
 }
 
 /* SECTION : HEBERGEMENTS */
-h2{
-    width: 100%;
-    margin-top: 30px;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-h3{
-    margin-bottom: -8px;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-
-.grey{
-    color: grey !important;
-}
-
-.fas.fa-star{
-    color: #0065FC;
-    font-size: 10px;
-}
-
 #hebergements{
     display: flex;
 }
 
-#hebergements a{
-    display: contents;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.hebergements-left{
+.hebergements-block{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -255,7 +225,22 @@ h3{
     padding-right: 25px;
 }
 
-.hebergements-left figure{
+h2{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#hebergements a{
+    display: contents;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.hebergements-block figure{
     background-color: white;
     border: 2px #F2F2F2 solid;
     border-radius: 15px;
@@ -265,12 +250,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.hebergements-left figcaption{
-    padding: 5px 0 10px 10px;
-    text-align: left;
-}
-
-.hebergements-left img{
+.hebergements-block img{
     height: 100px;
     width: 100%;
     object-fit: cover;
@@ -279,20 +259,31 @@ h3{
 
 }
 
-.hebergements-left p{
+.hebergements-block figcaption{
+    padding: 5px 0 10px 10px;
+    text-align: left;
+}
+
+h3{
+    margin-bottom: -8px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.hebergements-block p{
     color: grey;
     font-size: 0.7em;
     margin-bottom: 0px;
 }
 
-.hebergements-left figure + a h2{
-    margin-bottom: 20px;
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 0.8em;
+.fas.fa-star{
+    color: #0065FC;
+    font-size: 10px;
 }
 
-
+.grey{
+    color: grey !important;
+}
 
 /* ASIDE */
 aside{
@@ -328,34 +319,55 @@ aside img{
     object-fit: cover;
 }
 
+aside figcaption{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
 aside p{
     font-size: 0.7em;
     color: grey;
 }
 
-aside figcaption{
-    margin-left: 20px;
-    margin-bottom: 5px;
-    width: 45%;
-}
-
 aside .fas.fa-star{
-    margin-top: 20px;
+    margin-top: -10px;
 }
 
 /* SECTION : ACTIVITES */
-.activites{
+#activites{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.activites a{
+#activites a{
     display: contents;
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+
+#activites figure{
+    border-radius: 15px;
+    margin: 0;
+    border: 2px solid #F2F2F2;
+    box-shadow: 5px 5px 5px #F2F2F2;
+    flex-basis: 25%;
+}
+
+#activites img{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+#activites h3{
+    margin: auto;
+    padding: 5px 0 10px 10px;
+    width: 90%;
 }
 
 .noflex{
@@ -365,50 +377,28 @@ aside .fas.fa-star{
     flex-basis: 20%;
 }
 
-.activites .item1{
-    height: 300px;
+#activites .item1{
+    height: 350px;
 }
 
-.activites .item2{
-    height: 150px;
+#activites .item2{
+    height: 175px;
 }
 
-.activites .item3{
-    height: 90px;
+#activites .item3{
+    height: 110px;
 }
 
-.activites .item4{
-    height: 300px;
+#activites .item4{
+    height: 350px;
 }
 
-.activites .item5{
-    height: 90px;
+#activites .item5{
+    height: 110px;
 }
 
-.activites .item6{
-    height: 150px;
-}
-
-.activites img{
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    height: 100px;
-    width: 100%;
-}
-
-.activites figure{
-    border-radius: 15px;
-    margin: 0;
-    border: 2px solid #F2F2F2;
-    box-shadow: 5px 5px 5px #F2F2F2;
-    flex-basis: 20%;
-}
-
-.activites h3{
-    margin: 0;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
+#activites .item6{
+    height: 175px;
 }
 
 /* FOOTER */
@@ -416,9 +406,11 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 30px;
+    padding: 0 100px 30px 30px;
+}
+
+footer p{
+    font-size: 0.7em;
 }
 
 footer a{
@@ -430,9 +422,6 @@ footer h4{
     font-weight: bold;
 }
 
-footer p{
-    font-size: 0.7em;
-}
 
 
 
