@@ -18,17 +18,6 @@ header{
 }
 
 /* NAV */
-@keyframes navAnimation {
-    from {
-        color: #F2F2F2;
-    }
-
-    to {
-        color: #0065FC;
-        border-top: solid 2px #0065FC;
-        padding-top: 43px;
-    }
-}
 nav ul{
     display: flex;
     list-style-type: none;

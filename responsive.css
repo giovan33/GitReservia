@@ -267,6 +267,7 @@
     /* FOOTER */
     footer{
        display: block;
+       padding-bottom: 60px;
     }
 
    footer h4{
